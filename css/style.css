@@ -52,15 +52,18 @@ div h2{
     text-align: center;
 }
 
-.Submit-Form{
-    max-width: 400px;
+.form-container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
 
-.form{
-    text-align: left;
-    margin-top: 30px;
+.Submit-Form,
+.sender-form {
+    width: 48%;
+    box-sizing: border-box; 
 }
 
 label {
@@ -88,3 +91,4 @@ nav img {
     width: 50px;
     height: 50px;
 }
+
