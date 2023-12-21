@@ -7,20 +7,26 @@
     <link rel="stylesheet" href="/11-dec-23-Frin123/css/style.css">
 </head>
 <body>
-    <nav>
+    <nav class="header-nav">
         <img src="https://tse1.mm.bing.net/th?id=OIP.YTOxTlK4zNmw634KYk0FfAHaHa&pid=Api&P=0&h=180.jpg" alt="Logo" class="Logo">
         <ul class="nav-items">
-            <li>Home</li>
-            <li>Our Profile</li>
-            <li>Achievement</li>
-            <li>Message us</li>
+            <button><li>Home</li></button>
+            <button><li>Our Profile</li></button>
+            <button><li>Achievement</li></button>
+            <button><li>Message us</li></button>
         </ul>
     </nav>
     <header>
         <h1>Hi <span id="name">Ervan</span>, Welcome to my website</h1>
         <button onclick="replacename()">Replace Name</button>
         <h4>Please Enjoy</h4>
-        <img src="/11-dec-23-Frin123/assets/rawImage.jpg">
+        <div id="slider">
+        <img src="/11-dec-23-Frin123/assets/rawImage.jpg" class="slider-image" >
+        <img src="/11-dec-23-Frin123/assets/20170822-3K3K6154F-1620x1080.jpg" class="slider-image" >
+        <img src="/11-dec-23-Frin123/assets/bwbqxkeieg3hrhv6.avif" class="slider-image">
+        <button onclick="plusDivs(-1)">Previous</button>
+        <button onclick="plusDivs(1)">Next</button>
+        </div>
         <hr>
     </header>
     <div>
