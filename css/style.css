@@ -51,39 +51,68 @@ div h2{
     text-align: center;
 }
 
-.form-container {
+.form-container{
+    flex-direction: row;
     display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+}
+.form-container > div {
+    display: flex; 
+    flex:1 ;
+    align-content:center; 
+    justify-content:center;
 }
 
-.Submit-Form,
 .sender-form {
-    width: 48%;
-    box-sizing: border-box; 
+    flex-direction: column; 
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    max-width: 600px;
+    max-height: 200px;
+    margin-top: 30px;
+    font-weight: bold;
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
+.sender-form span{
+    font-weight: normal;
 }
 
-textarea {
-    height: 100px;
-    width: 100px;
+input, textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 12px;
     box-sizing: border-box;
-    flex: 1;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
 }
 
-form {
-    flex: 1;
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label[for="male"],
+label[for="female"] {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-container{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 60%;
+    flex-direction: column; 
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;    
+    margin-left: 20px;
 }
 nav img {
     display: flex;
@@ -117,6 +146,11 @@ header button {
     cursor: pointer;
     border-radius: 5px; 
     vertical-align: middle;
+}
+
+hr {
+    border: 1px solid black;
+    margin : 15px 0;
 }
 
 @media only screen and (max-width:600px) {  
